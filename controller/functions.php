@@ -49,9 +49,7 @@ function get_all_link()
         `links`,
         `links_id`
     EOD;
-    $linkStmt = $db->query($sql);
-    $links = $linksStmt->fetchAll(PDO::FETCH_ASSOC);
-    return $;
+
 }
 
 
