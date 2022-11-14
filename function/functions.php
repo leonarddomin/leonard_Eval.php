@@ -5,7 +5,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('DBNAME', 'links_manager_dev');
-define('PASSWORD', ''); // windows (Mamp le mot de passe c'est 'root')
+define('PASSWORD', 'Cavalier'); // windows (Mamp le mot de passe c'est 'root')
 
 /**
  * Fonction de connexion à la base de données
