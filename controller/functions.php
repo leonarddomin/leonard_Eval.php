@@ -38,8 +38,22 @@ function db_connect(): PDO
  */
 function get_all_link()
 {
-    // TODO implement function
+
+    <<<EOD
+    SELECT
+        `title`,
+        `url`,
+    FROM
+        `links`
+    ORDER BY
+        `links`,
+        `links_id`
+    EOD;
+    $linkStmt = $db->query($sql);
+    $links = $linksStmt->fetchAll(PDO::FETCH_ASSOC);
+    return $;
 }
+
 
 
 /**
@@ -49,7 +63,15 @@ function get_all_link()
  */
 function get_link_by_id($link_id)
 {
-    // TODO implement function
+    <<<EOD
+    SELECT
+        `liks_id`,
+    FROM
+        `links`
+    ORDER BY
+        `links`,
+        `links_id`
+    EOD;
 }
 
 
@@ -60,7 +82,19 @@ function get_link_by_id($link_id)
  */
 function update_link($data)
 {
-    // TODO implement function
+    
+    <<<EOD
+    UPDATE 
+        `links`,
+
+    SET 
+        `title`
+        `url`
+
+    WHERE 
+        `links_id`
+
+    EOD;
 }
 
 
@@ -71,7 +105,13 @@ function update_link($data)
  */
 function create_link($data)
 {
-    // TODO implement function
+    <<<EOD
+    INSERT INTO `links`
+
+    VALUES ('title','url')
+
+    EOD;
+    
 }
 
 /**
@@ -81,5 +121,9 @@ function create_link($data)
  */
 function delete_link($link_id)
 {
-    // TODO implement function
+    <<<EOD
+    DELETE FROM `links`
+
+    WHERE `links_id` = 1
+    EOD;
 }
